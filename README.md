@@ -1,2 +1,2 @@
-# multi-tenancy-
+# multi-tenancy
 Multi Tenancy in Hibernate 
