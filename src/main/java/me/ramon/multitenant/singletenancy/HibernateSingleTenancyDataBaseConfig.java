@@ -7,13 +7,10 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@ConditionalOnProperty(prefix = "de.yomoapp", name = "database-mode", havingValue = "hibernate-singletenant")
+@ConditionalOnProperty(prefix = "me.ramon", name = "database-mode", havingValue = "hibernate-singletenant")
 @Configuration
 @AutoConfigureBefore({HibernateJpaAutoConfiguration.class})
-//@PropertySource("application.properties")
-//@EntityScan("de.yomobit.addressmanagment.domain")
-//@Import({defualtDataBaseConfig.class, DefualtHibernateDataBaseConfig.class})
-@ComponentScan(basePackages = {"de.yomobit.multitenant.shared", "de.yomobit.multitenant.singletenancy"})
+@ComponentScan(basePackages = {"me.ramon.multitenant.shared", "me.ramon.multitenant.singletenancy"})
 public class HibernateSingleTenancyDataBaseConfig {
 
 }

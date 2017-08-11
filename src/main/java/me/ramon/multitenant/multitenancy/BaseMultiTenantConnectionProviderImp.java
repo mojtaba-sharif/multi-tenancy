@@ -1,6 +1,7 @@
 package me.ramon.multitenant.multitenancy;
 
 
+
 import com.mchange.v2.c3p0.C3P0Registry;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.mchange.v2.c3p0.PooledDataSource;
@@ -44,8 +45,6 @@ public class BaseMultiTenantConnectionProviderImp extends AbstractDataSourceBase
         defaultDataSource.setUrl(url);
         defaultDataSource.setUsername(username);
         defaultDataSource.setPassword(password);
-//        defaultDataSource.setInitialPoolSize(initialPoolSize);
-//        defaultDataSource.setMaxConnectionAge(poolMaxConnectionAge);
         try {
             defaultDataSource.setDriverClassName(driver);
         } catch (Exception e) {
@@ -87,8 +86,6 @@ public class BaseMultiTenantConnectionProviderImp extends AbstractDataSourceBase
         comboPooledDataSource.setMinPoolSize(sourceWrapper.getMinPoolSize());
         comboPooledDataSource.setMaxPoolSize(sourceWrapper.getMaxPoolSize());
         comboPooledDataSource.setMaxConnectionAge(sourceWrapper.getPoolMaxConnectionAge());
-//        comboPooledDataSource.setMaxStatements();
-//        comboPooledDataSource.setCheckoutTimeout();
         try {
             comboPooledDataSource.setDriverClass(sourceWrapper.getDriver());
         } catch (PropertyVetoException e) {

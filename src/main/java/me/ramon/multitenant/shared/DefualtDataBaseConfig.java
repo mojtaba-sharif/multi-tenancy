@@ -8,10 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 
-/**
- * Created by Romon on 1/14/2017.
- */
-//@AutoConfigureBefore(HibernateJpaAutoConfiguration.class)
+
 @Configuration
 public class DefualtDataBaseConfig {
 
@@ -23,10 +20,6 @@ public class DefualtDataBaseConfig {
     @Bean
     public DataSource defualtDataSource() {
         ComboPooledDataSource defualtDatasource = new ComboPooledDataSource();
-//        defualtDatasource.setUrl("jdbc:mysql://localhost:3306/address1");
-//        defualtDatasource.setUsername("root");
-//        defualtDatasource.setPassword("");
-//        defualtDatasource.setDriverClassName("com.mysql.jdbc.Driver");
         defualtDatasource.setJdbcUrl(properties.getUrl());
         defualtDatasource.setUser(properties.getUsername());
         defualtDatasource.setPassword(properties.getPassword());

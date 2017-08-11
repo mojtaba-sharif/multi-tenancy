@@ -1,8 +1,6 @@
 package me.ramon.multitenant.multitenancy;
 
-/**
- * Created by Romon on 1/14/2017.
- */
+
 public class DataSourceWrapper {
 
     private String tenantId;

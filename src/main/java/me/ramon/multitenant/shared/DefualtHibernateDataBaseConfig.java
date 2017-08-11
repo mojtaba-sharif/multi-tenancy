@@ -9,13 +9,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
-/**
- * Created by Romon on 1/14/2017.
- */
-@Configuration
 
-//@ComponentScan(basePackages = {"de.yomobit.shared","de.yomobit.shared"})
-//@PropertySource("classpath:application.properties")
+@Configuration
 public class DefualtHibernateDataBaseConfig {   
 
     @Autowired

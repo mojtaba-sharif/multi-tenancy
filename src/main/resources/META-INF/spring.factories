@@ -1,2 +1,2 @@
 org.springframework.context.ApplicationListener=me.ramon.multitenant.DefultProperties
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\de.yomobit.yomoappmultitenant.multitenancy.HibernateMultiTenancyDataBaseConfig,\de.yomobit.yomoappmultitenant.singletenancy.HibernateSingleTenancyDataBaseConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\me.ramon.multitenant.HibernateMultiTenancyDataBaseConfig,\me.ramon.multitenant.singletenancy.HibernateSingleTenancyDataBaseConfig

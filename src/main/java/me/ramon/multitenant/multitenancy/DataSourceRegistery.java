@@ -2,9 +2,6 @@ package me.ramon.multitenant.multitenancy;
 
 import java.util.HashMap;
 
-/**
- * Created by Romon on 1/14/2017.
- */
 public class DataSourceRegistery extends HashMap<String, DataSourceWrapper> {
 
 

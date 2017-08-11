@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@ConditionalOnProperty(prefix = "de.yomoapp", name = "database-mode", havingValue = "hibernate-multitenant")
+@ConditionalOnProperty(prefix = "me.ramon", name = "database-mode", havingValue = "hibernate-multitenant")
 @Configuration
 @AutoConfigureBefore({HibernateJpaAutoConfiguration.class})
-@ComponentScan(basePackages = {"de.yomobit.multitenant.shared", "de.yomobit.multitenant.multitenancy"})
+@ComponentScan(basePackages = {"me.ramon.multitenant.shared", "me.ramon.multitenant.multitenancy"})
 public class HibernateMultiTenancyDataBaseConfig {
 
 }

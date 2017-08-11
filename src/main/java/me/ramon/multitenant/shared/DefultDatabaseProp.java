@@ -4,9 +4,6 @@ package me.ramon.multitenant.shared;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by KADOOS on 01/24/2017.
- */
 @Component
 @ConfigurationProperties(prefix="defualtDataBase")
 public class DefultDatabaseProp {

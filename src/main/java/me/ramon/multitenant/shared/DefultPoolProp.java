@@ -3,11 +3,7 @@ package me.ramon.multitenant.shared;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by KADOOS on 01/30/2017.
- */
 @Component
-
 @ConfigurationProperties(prefix = "defualtPool")
 public class DefultPoolProp {
 
