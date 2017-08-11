@@ -1,0 +1,18 @@
+{
+  "groups": [
+
+  ],
+  "properties": [
+  ],
+  "hints": [{
+    "name": "database-mode",
+    "values": [
+      {
+        "value": "hibernate-singletenant"
+      },
+      {
+        "value": "hibernate-multitenant"
+      }
+    ]
+  }]
+}
